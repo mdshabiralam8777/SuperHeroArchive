@@ -1,0 +1,31 @@
+.super-hero-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 15px;
+}
+.super-hero-search__input-field {
+  width: 300px;
+  border-radius: 50px; /* Adjust the value to control the roundness */
+  border: 1px solid #ccc; /* Optional: Add a border for the input */
+  padding: 5px 5px 5px 15px
+}
+.super-hero-search__icon{
+    margin-left: -25px;
+    cursor: pointer;
+}
+#no-data-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(230, 171, 9);
+    margin-top: 30px;
+}
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}

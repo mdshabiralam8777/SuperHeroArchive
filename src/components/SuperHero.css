@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../assets/custom-Font/GoldropspersonaluseRegular-9Ynn5.otf")
+    format("truetype");
+}
+.super-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px 25px 0px;
+  font-family: MyCustomFont;
+  font-size: 5em;
+  background-image: url(../assets/images/background_img.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.super-hero__title {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-decoration-line: underline;
+}
