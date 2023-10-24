@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import IconComponent from "../IconComponent";
+import DetailedLayout from "./DetailedLayout.js";
 import "./superHeroSearch.css";
-import React, { useState, useCallback,useEffect  } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 
 function SuperHeroSearch() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -28,7 +29,9 @@ function SuperHeroSearch() {
           console.log(data);
           console.log("Success");
         } else {
-          setError("No results found, We are working on to add more/new super heroes soon, Stay tuned!");
+          setError(
+            "No results found, We are working on to add more/new super heroes soon, Stay tuned!"
+          );
         }
       } else {
         // Handle error based on the response status
@@ -102,9 +105,10 @@ function SuperHeroSearch() {
       {errorMessage && <p id="no-data-found">{errorMessage}</p>}
       {searchResults.length > 0 && (
         <div>
-          {searchResults.map((character, index) => (
+          <DetailedLayout superhero={searchResults[0]} />
+          {/* {searchResults.map((character, index) => (
             <p key={index}>{character.name}</p>
-          ))}
+          ))} */}
         </div>
       )}
     </>
