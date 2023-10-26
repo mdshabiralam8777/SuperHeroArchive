@@ -20,7 +20,7 @@ function DetailedLayout({ superhero }) {
             {superhero.biography["full-name"] !== "" && (
               <div className="char-details">
                 <span className="Bio-heading">
-                  Full Name / Unmasked Name :{" "}
+                  Full Name :{" "}
                 </span>
                 <span className="chat-about">
                   {superhero.biography["full-name"]}
