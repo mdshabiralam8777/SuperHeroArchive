@@ -9,3 +9,23 @@
     color: #fff;
     font-size: 3rem;
   }
+  .container{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .power-stats-circle{
+    width: 160px;
+    height: auto;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: rgb(188, 189, 190) 0px 10px 10px 5px;
+  }
+  .Strength{
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: italic;
+  }
