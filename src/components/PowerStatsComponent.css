@@ -7,7 +7,7 @@
   .power-heading{
     font-family: MyCustomFont;
     color: #fff;
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .container{
     margin: 0px;
@@ -22,10 +22,14 @@
     height: auto;
     padding: 20px;
     border-radius: 35px;
-    box-shadow: rgb(188, 189, 190) 0px 10px 10px 5px;
+    box-shadow: rgb(188, 189, 190) 0px 5px 10px 5px;
   }
   .Strength{
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 800;
     font-style: italic;
+  }
+
+  .CircularProgressbar-text{
+    font-weight: 700;;
   }

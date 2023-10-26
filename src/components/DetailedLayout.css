@@ -24,6 +24,7 @@
 .char-name{
     font-family: MyCustomFont;
     font-size: 5rem;
+    margin-top: 70px !important;
 }
 .char-bio{
     padding: 10px 25px 0px 25px;
@@ -31,17 +32,17 @@
     font-weight: 700;
 }
 .Bio-heading{
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 600;
 }
 .chat-about{
     color: yellow;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .col-md-4, .col-md-5, .col-md-3 {
-    align-self: center;
+    align-self:flex-start;
     margin-bottom: 40px;
 }
 .top-heading{

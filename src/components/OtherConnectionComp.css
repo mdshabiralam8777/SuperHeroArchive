@@ -1,0 +1,8 @@
+.connection-list{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: orangered;
+    box-shadow: orangered 0px 2px 5px 2px;
+}

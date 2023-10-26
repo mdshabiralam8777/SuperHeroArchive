@@ -129,7 +129,7 @@ function DetailedLayout({ superhero }) {
       <div>
       <hr/>
 
-      <PowerStatsComponent power={superhero["powerstats"]}  />
+      <PowerStatsComponent power={superhero["powerstats"]} connection={superhero["connections"]["group-affiliation"]}  />
       </div>
     </>
   );

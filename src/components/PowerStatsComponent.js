@@ -1,9 +1,9 @@
 import "./PowerStatsComponent.css";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import OtherConnectionComp from "./OtherConnectionComp";
 
-function PowerStatsComponent({ power }) {
-  console.log(power);
+function PowerStatsComponent({ power,connection }) {
   return (
     <>
       <div className="h1 text-center power-heading my-5">
@@ -88,7 +88,9 @@ function PowerStatsComponent({ power }) {
           />
           <span className="Strength">combat</span>
         </div>
+        <OtherConnectionComp connections={connection}/>
       </div>
+
     </>
   );
 }
