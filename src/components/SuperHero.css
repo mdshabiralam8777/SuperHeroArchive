@@ -4,10 +4,7 @@
     format("truetype");
 }
 .super-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 100px 0px 25px 0px;
+  margin: 0px 0px 25px 0px;
   font-family: MyCustomFont;
   font-size: 5em;
   background-image: url(../assets/images/background_img.jpeg);

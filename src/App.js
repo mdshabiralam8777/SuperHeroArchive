@@ -7,9 +7,6 @@ function App() {
     <div className='App'>
       <SuperHero/>
       <SuperHeroSearch/>
-      <div>
-      <i className="bi bi-search"></i>
-      </div>
     </div>
   );
 }

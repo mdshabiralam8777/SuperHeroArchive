@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("../assets/custom-Font/GoldropspersonaluseRegular-9Ynn5.otf")
+      format("truetype");
+  }
+
+  .power-heading{
+    font-family: MyCustomFont;
+    color: #fff;
+    font-size: 3rem;
+  }

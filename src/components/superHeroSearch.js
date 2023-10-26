@@ -84,11 +84,11 @@ function SuperHeroSearch() {
           />
         </div>
         <div
-          className="super-hero-search__icon"
+          className="super-hero-search__icon text-dark"
           onClick={handleIconClick} // Changed this line
           disabled={loading}
         >
-          <IconComponent iconName="search" />
+          <IconComponent iconName={"search"} />
         </div>
       </div>
       {loading && (
@@ -102,13 +102,10 @@ function SuperHeroSearch() {
           </div>
         </div>
       )}
-      {errorMessage && <p id="no-data-found">{errorMessage}</p>}
+      {errorMessage && <p className="text-center" id="no-data-found">{errorMessage}</p>}
       {searchResults.length > 0 && (
         <div>
           <DetailedLayout superhero={searchResults[0]} />
-          {/* {searchResults.map((character, index) => (
-            <p key={index}>{character.name}</p>
-          ))} */}
         </div>
       )}
     </>
