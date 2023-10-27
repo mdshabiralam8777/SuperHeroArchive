@@ -6,7 +6,7 @@
 .super-hero {
   margin: 0px 0px 25px 0px;
   font-family: MyCustomFont;
-  font-size: 5em;
+  font-size: 4.5em;
   background-image: url(../assets/images/background_img.jpeg);
   background-size:cover;
   background-repeat: no-repeat;

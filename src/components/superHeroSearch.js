@@ -3,6 +3,7 @@ import IconComponent from "../IconComponent";
 import DetailedLayout from "./DetailedLayout.js";
 import "./superHeroSearch.css";
 import React, { useState, useCallback, useEffect } from "react";
+import ErrorHandelingComp from "./ErrorHandelingComp.js";
 
 function SuperHeroSearch() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -26,12 +27,8 @@ function SuperHeroSearch() {
         const data = await response.json();
         if (data.response === "success") {
           setSearchResults(data.results);
-          console.log(data);
-          console.log("Success");
         } else {
-          setError(
-            "No results found, We are working on to add more/new super heroes soon, Stay tuned!"
-          );
+          setError(data.error);
         }
       } else {
         // Handle error based on the response status
@@ -102,7 +99,11 @@ function SuperHeroSearch() {
           </div>
         </div>
       )}
-      {errorMessage && <p className="text-center" id="no-data-found">{errorMessage}</p>}
+      {errorMessage && 
+        <div>
+          <ErrorHandelingComp errorMsg={errorMessage} />
+        </div>
+      }
       {searchResults.length > 0 && (
         <div>
           <DetailedLayout superhero={searchResults[0]} />

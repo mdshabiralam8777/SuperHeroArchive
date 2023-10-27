@@ -4,7 +4,7 @@ function OtherConnectionComp({ connections }) {
   const connectionsList = connections.split(",");
   return (
     <>
-      <div className="h2 text-center mt-3 mb-1"> OTHER CONNECTIONS</div>
+      <div className="text-center mt-3 mb-1 other-connection"> OTHER CONNECTIONS</div>
       <div className="container d-flex mb-5">
         {connectionsList.length > 0 &&
           connectionsList.map((connection, index) => (

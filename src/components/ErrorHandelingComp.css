@@ -1,0 +1,13 @@
+.error-img {
+    width: 100px;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+.error {
+    font-weight: 600;
+    font-size: 1.15rem;
+    font-weight: 600px;
+    margin: 20px 0px;
+}
