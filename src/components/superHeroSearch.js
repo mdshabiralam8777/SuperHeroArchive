@@ -99,16 +99,17 @@ function SuperHeroSearch() {
           </div>
         </div>
       )}
-      {errorMessage && 
+      {errorMessage && (
         <div>
           <ErrorHandelingComp errorMsg={errorMessage} />
         </div>
-      }
-      {searchResults.length > 0 && (
-        <div>
-          <DetailedLayout superhero={searchResults[0]} />
-        </div>
       )}
+      {searchResults.length > 0 &&
+        searchResults.map((hero, index) => (
+          <div key={index}>
+            <DetailedLayout superhero={hero} />
+          </div>
+        ))}
     </>
   );
 }
