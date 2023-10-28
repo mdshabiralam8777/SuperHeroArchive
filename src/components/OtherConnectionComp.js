@@ -8,7 +8,7 @@ function OtherConnectionComp({ connections }) {
       <div className="container d-flex mb-5">
         {connectionsList.length > 0 &&
           connectionsList.map((connection, index) => (
-            <div className="connection-list" key={index}>{connection}</div>
+            <div className="connection-list text-center" key={index}>{connection}</div>
           ))}
       </div>
     </>
