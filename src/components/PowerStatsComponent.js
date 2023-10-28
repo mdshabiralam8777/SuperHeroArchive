@@ -13,8 +13,8 @@ function PowerStatsComponent({ power,connection }) {
       <div className="container d-flex">
         <div className="text-center power-stats-circle mb-5">
           <CircularProgressbar
-            value={power["intelligence"]}
-            text={`${power["intelligence"]}%`}
+            value={power["combat"] !== 'null' ? power["combat"] : 0}
+            text={`${power["combat"] !== 'null' ? power["combat"] + "%" : "0"}`}
             styles={buildStyles({
               textColor: "white",
               pathColor: "green",
@@ -26,8 +26,8 @@ function PowerStatsComponent({ power,connection }) {
 
         <div className="text-center power-stats-circle mb-5">
           <CircularProgressbar
-            value={power["strength"]}
-            text={`${power["strength"]}%`}
+           value={power["combat"] !== 'null' ? power["combat"] : 0}
+           text={`${power["combat"] !== 'null' ? power["combat"] + "%" : "0"}`}
             styles={buildStyles({
               textColor: "white",
               pathColor: "red",
@@ -39,8 +39,8 @@ function PowerStatsComponent({ power,connection }) {
 
         <div className="text-center power-stats-circle mb-5">
           <CircularProgressbar
-            value={power["speed"]}
-            text={`${power["speed"]}%`}
+           value={power["combat"] !== 'null' ? power["combat"] : 0}
+           text={`${power["combat"] !== 'null' ? power["combat"] + "%" : "0"}`}
             styles={buildStyles({
               textColor: "white",
               pathColor: "yellow",
@@ -52,8 +52,8 @@ function PowerStatsComponent({ power,connection }) {
 
         <div className="text-center power-stats-circle mb-5">
           <CircularProgressbar
-            value={power["durability"]}
-            text={`${power["durability"]}%`}
+           value={power["combat"] !== 'null' ? power["combat"] : 0}
+           text={`${power["combat"] !== 'null' ? power["combat"] + "%" : "0"}`}
             styles={buildStyles({
               textColor: "white",
               pathColor: "silver",
@@ -65,8 +65,8 @@ function PowerStatsComponent({ power,connection }) {
 
         <div className="text-center power-stats-circle mb-5">
           <CircularProgressbar
-            value={power["power"]}
-            text={`${power["power"]}%`}
+            value={power["combat"] !== 'null' ? power["combat"] : 0}
+            text={`${power["combat"] !== 'null' ? power["combat"] + "%" : "0"}`}
             styles={buildStyles({
               textColor: "white",
               pathColor: "orange",
@@ -78,8 +78,8 @@ function PowerStatsComponent({ power,connection }) {
 
         <div className="text-center power-stats-circle mb-5">
           <CircularProgressbar
-            value={power["combat"]}
-            text={`${power["combat"]}%`}
+            value={power["combat"] !== 'null' ? power["combat"] : 0}
+            text={`${power["combat"] !== 'null' ? power["combat"] + "%" : "0"}`}
             styles={buildStyles({
               textColor: "white",
               pathColor: "maroon",
